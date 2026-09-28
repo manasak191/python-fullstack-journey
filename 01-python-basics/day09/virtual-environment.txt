@@ -1,0 +1,22 @@
+# Create virtual environment
+python3 -m venv venv
+
+# Activate (Linux/Mac)
+source venv/bin/activate
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Your prompt now shows (venv)
+
+# Install packages locally
+pip install requests pandas
+
+# Create requirements.txt (to share dependencies)
+pip freeze > requirements.txt
+
+# Other person installs dependencies
+pip install -r requirements.txt
+
+# Deactivate
+deactivate
