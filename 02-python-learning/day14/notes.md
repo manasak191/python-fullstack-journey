@@ -58,11 +58,14 @@
         Permissions
         Root user
         Least privilege
-        MFA
+        MFA- Multi Factor Autentication 
     
     # Root user
         The root user is the account's original, highest-level AWS identity.
     
+    # group 
+        An IAM group is a collection of IAM users to which permissions can be assigned collectively.
+
     # least privilege
         Give a user or service only the permissions required to perform its task.
         # Example:
@@ -113,4 +116,18 @@
         3306	MySQL
         5432	PostgreSQL
         8000	Common FastAPI development port
+
+# Assignment 1 — What you completed
+    AWS Account
+        │
+        └── IAM
+            │
+            ├── User
+            │    └── developer1
+            │
+            └── Group
+                │
+                └── EC2-Practice-Users
+                        │
+                        └── AmazonEC2ReadOnlyAccess
 
